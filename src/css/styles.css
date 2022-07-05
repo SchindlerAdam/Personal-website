@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin : 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    background: #e7e1ff  ;
+}
+
+
+
+#navbar__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0em 0em 10em 0em;
+    background: linear-gradient(320deg, #1c1241,  #44ced9 ,  #775fce );
+    box-shadow: 2px 2px 5px black;
+}
+
+#profile-image img {
+    margin: 1em;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+    width: 50%;
+    height: 100%;
+}
+
+#navbar__name-title {
+    font-size: 1.6em;
+    color: white;
+}
+
+#navbar-elements li, a{
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    transition: font-size 1s ease;
+}
+
+
+
+#navbar-elements a:hover {
+    font-size: 1.5em;
+    color:  #00ecff ;
+    font-style: oblique;
+}
+
+#profile-image img:hover {
+    margin: 1em;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+    width: 50%;
+    height: 100%;
+    content: url("../favicon/AvatarMakerSmile.png");
+}
+
+#main__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5em 10em 5em 10em;
+    padding: 3em;
+    border-radius: 3em;
+    background: linear-gradient(320deg, #1c1241,  #44ced9 ,  #775fce );
+    color: white;
+    min-height: 50vh;
+}
+
+#main__welcome {
+    width: 60%;
+    font-size: 1.1em;
+}
+
+#main__welcome h3 {
+    text-align: justify;
+}
+
+#main__skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+#main__skills h3 {
+    margin: 1em;
+    font-size: 1.9em;
+    text-decoration: underline;
+}
+
+#main__skills li {
+    display: block;
+    padding: 5px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+#main__skills a:hover {
+    color:  #00ecff ;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+
+
+#footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom:  auto;
+    padding: 20px;
+}
+
+#footer__social-media-links {
+    font-size: 2em;
+    margin-bottom: auto;
+}
+
+#footer__social-media-links i {
+    color: black;
+}
