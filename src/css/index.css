@@ -62,7 +62,7 @@ body{
     box-shadow: 2px 2px 5px black;
     width: 50%;
     height: 100%;
-    content: url("../favicon/AvatarMakerSmile.png");
+    content: url("../assets/favicon/AvatarMakerSmile.png");
 }
 
 #main__wrapper {

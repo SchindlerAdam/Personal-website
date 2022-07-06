@@ -61,8 +61,51 @@ body{
     margin-bottom: 17px;
 }
 
-#login__container button {
-    margin: 20px;
+#login__container__form-rememberme-forgetpass-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+#rememberme__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#rememberme__container-input, #rememberme__container-label {
+    padding: 2%;
+}
+
+#rememberme__container-label {
+    margin-top: 3px;
+    margin-bottom: 17px;
+}
+
+#forgetpass__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#forgetpass__container p {
+    margin-top: 3px;
+    margin-bottom: 17px;
+}
+
+#forgetpass__container p:hover {
+    text-decoration: underline;
+}
+
+#login__container #login-btn {
+    margin: 10px;
     width: 60%;
     font-size: 1.3em;
     border-radius: 15px;
@@ -71,8 +114,7 @@ body{
     transition-duration: 0.4s;
 }
 
-#login__container button:hover {
-    box-shadow: 1px 1px 2px #1c1241;
+#login__container #login-btn:hover {
     font-size: 1.5em;
 }
 
@@ -86,6 +128,45 @@ body{
     color: black;
 }
 
+#need-account {
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+#need-account a:hover {
+    text-decoration: underline ;
+}
+
+.horizontal-line {
+    border: 1px solid #d3dfe0;
+    width: 80%;
+    margin: 2%;
+}
+
+#login-btn-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 30px 0px;
+    width: 60%;
+    font-size: 1.3em;
+    border: 1px solid #ababab;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+    background: #ffffff;
+    color: #3f3f3f;
+}
+
+#login-btn-google img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#login-btn-google:hover {
+    font-size: 1.5em;
+}
+
 
 #footer__container {
     display: flex;
@@ -93,7 +174,7 @@ body{
     justify-content: center;
     align-items: center;
     position: fixed;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     bottom: 0;
     width: 100%;
     height: 6%;
