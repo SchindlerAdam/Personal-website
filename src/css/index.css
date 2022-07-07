@@ -44,13 +44,13 @@ body{
     text-decoration: none;
     font-size: 1.3em;
     color: white;
-    transition: font-size 1s ease;
+    transition: 1s ease;
 }
 
 
 
 #navbar-elements a:hover {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color:  #00ecff ;
     font-style: oblique;
 }
@@ -63,6 +63,14 @@ body{
     width: 50%;
     height: 100%;
     content: url("../assets/favicon/AvatarMakerSmile.png");
+}
+
+.hamburger {
+    display: none;
+}
+
+.ham-menu-wrapper {
+    display: none;
 }
 
 #main__wrapper {
@@ -81,6 +89,7 @@ body{
 #main__welcome {
     width: 60%;
     font-size: 1.1em;
+    text-align: justify;
 }
 
 #main__welcome h3 {
@@ -123,9 +132,9 @@ body{
     align-items: center;
     margin-top: 5em;
     margin-bottom:  auto;
-    position: fixed;
+    /*position: fixed;
+    bottom: 0;*/
     padding: 10px 10px 10px 10px;
-    bottom: 0;
     width: 100%;
 }
 
@@ -136,4 +145,124 @@ body{
 
 #footer__social-media-links i {
     color: black;
+}
+
+@media  only screen and (min-width: 375px) and (max-width: 600px){
+
+    /* HEADER */
+    #navbar__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding: 20px;
+        margin: 0em 0em 5em 0em;
+    }
+
+    #navbar-elements {
+        display: none;
+    }
+
+    #profile-image img {
+        display: none;
+    }
+
+    #navbar__name-title {
+        font-size: 0.7em;
+        justify-content: flex-start;
+        color: white;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamb-navbar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+        background-color: white;
+    }
+
+    .ham-menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border: 1px solid #ababab;
+        position: absolute;
+        top: -160px;
+        width: 100%;
+    }
+
+    .ham-menu-wrapper a {
+        color: #3f3f3f;
+    }
+
+    .ham-menu-wrapper.active {
+        top: 100px;
+        transition: 0.4s ease-in-out;
+    }
+
+    .hamburger.active .hamb-navbar:nth-child(2) {
+        opacity: 0;
+    }
+
+
+    .hamburger.active .hamb-navbar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+
+    .hamburger.active .hamb-navbar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* MAIN */
+
+    #main__wrapper {
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    #main__welcome {
+        margin: 1em 3em 1em 3em;
+        padding: 1em;
+        width: 100%;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    #main__skills {
+        width: 100%;
+    }
+
+    #main__skills li {
+        display: block;
+        padding: 5px;
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    /* FOOTER */
+
+    #footer__wrapper {
+        margin-top: 3em;
+        padding: 3px;
+        width: 100%;
+    }
+
+    #footer__social-media-links {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: .7em;
+    }
+
+    #copyright {
+        margin: .7em;
+        text-align: center;
+    }
 }
